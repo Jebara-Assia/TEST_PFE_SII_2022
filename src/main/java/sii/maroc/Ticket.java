@@ -1,10 +1,13 @@
 package sii.maroc;
 
-public class Ticket {
+import java.util.ArrayList;
+import java.util.List;
 
+public class Ticket {
+	List<String> orderLine = new ArrayList<String>();
 	public Ticket and(String string) {
-		// TODO Auto-generated method stub
-		return null;
+		this.orderLine.add(string);
+		return this;
 	}
 
 }
